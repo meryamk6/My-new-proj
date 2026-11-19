@@ -1,0 +1,20 @@
+Narration start times in the final film: mohamed_ali_wa_dinosaur.mp4 (110.875 s, 1080p, 24 fps)
+Each time is where that narration file starts playing in the film. The voice itself may begin a fraction of a second later, because some files open with a short silence.
+
+scene01_title  n01  00:00.800  (0.800 s)   "محمد علي... والديناصور الصغير."
+scene02        n02  00:06.300  (6.300 s)   "كان واحد الولد صغير سميتو محمد علي..."
+scene03        n03  00:16.500  (16.500 s)  "واحد النهار، سمع شي صوت: بوم... بوم... بوم!"
+scene04        n04  00:25.000  (25.000 s)  "شاف وراء الشجرة، ولقى ديناصور صغير..."
+scene05        n05  00:40.475  (40.475 s)  "قالو محمد علي: علاش كتبكي آ صاحبي؟..."
+scene06        n06  00:50.475  (50.475 s)  "قال محمد علي: ماتخافش! أنا غادي نعاونك!"
+scene07        n07  00:56.958  (56.958 s)  "مشاو بجوج... طاق طاق طاق..."
+scene08        n08  01:09.758  (69.758 s)  "وفجأة... رااااوووور! شكون هادي؟..."
+scene09        n09  01:18.558  (78.558 s)  "فرح الديناصور الصغير بزاف، وعنق ماماه..."
+scene10        n10  01:31.458  (91.458 s)  "رجع محمد علي لدارهم فرحان وقال..."
+
+Sound effects in the film (for reference):
+boom     00:20.200 (20.200 s)
+splash   01:02.658 (62.658 s)
+roar     01:08.258 (68.258 s)
+sparkle  01:44.675 (104.675 s)
+Lullaby music: starts at 00:00.000 under the whole film.
