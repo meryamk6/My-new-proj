@@ -1,0 +1,22 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1920
+PlayResY: 1080
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,DejaVu Sans,104,&H003FD2FF,&H003FD2FF,&H00003B7A,&H64000000,-1,0,0,0,100,100,0,0,1,7,5,8,60,60,70,1
+Style: Default,DejaVu Sans,58,&H00FFFFFF,&H00FFFFFF,&H00202020,&H64000000,-1,0,0,0,100,100,0,0,1,5,2,2,60,60,60,1
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:00:00.40,0:00:05.70,Title,,0,0,0,,{\fad(500,400)}‏محمد علي والديناصور الصغير‏
+Dialogue: 0,0:00:40.00,0:00:49.20,Default,,0,0,0,,‏قالو محمد علي: علاش كتبكي آ صاحبي؟‏\N‏قال الديناصور: تلفت على ماما ديالي!‏
+Dialogue: 0,0:00:49.80,0:00:55.80,Default,,0,0,0,,‏قال محمد علي: ماتخافش! أنا غادي نعاونك!‏
+Dialogue: 0,0:00:56.30,0:01:07.30,Default,,0,0,0,,‏مشاو بجوج... طاق طاق طاق، طلعو الجبل الصغير.‏\N‏شلاپ شلاپ شلاپ، دازو فالما.‏
+Dialogue: 0,0:01:07.90,0:01:17.30,Default,,0,0,0,,‏وفجأة... رااااوووور! شكون هادي؟‏\N‏هادي ماما ديال الديناصور!‏
+Dialogue: 0,0:01:17.90,0:01:24.00,Default,,0,0,0,,‏فرح الديناصور الصغير بزاف، وعنق ماماه.‏
+Dialogue: 0,0:01:24.00,0:01:30.40,Default,,0,0,0,,‏قالت ماما ديناصور: شكرا آ محمد علي!‏\N‏نتا ولد زوين وشجاع!‏
+Dialogue: 0,0:01:31.00,0:01:43.70,Default,,0,0,0,,‏رجع محمد علي لدارهم فرحان وقال:‏\N‏ماما! اليوم ولا عندي صاحب جديد... ديناصور!‏
+Dialogue: 0,0:01:44.30,0:01:50.00,Default,,0,0,0,,‏وصافي، سالات القصة.‏

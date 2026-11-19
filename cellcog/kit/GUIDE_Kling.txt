@@ -1,0 +1,63 @@
+محمد علي والديناصور الصغير - كيفاش تحركي التصاور مجانا
+=====================================================
+
+التطبيق: Kling AI  (ولا Hailuo AI ولا Meta AI)
+1. دخلي لـ Kling وختاري: Image to Video
+2. طلعي التصويرة
+3. نسخي الـ prompt ديالها (بالإنجليزية) وحطيه
+4. ختاري المدة لي مكتوبة، والجودة Standard (مجانية)
+5. Generate، ومن بعد Download
+6. سمي الفيديو بنفس سمية التصويرة (مثلا 05_conversation.mp4) وصيفطيه ليا
+   وأنا نجمع كلشي مع الصوت والكتابة.
+
+ماشي ضروري تصاوبي كاع المشاهد: أي مشهد ماصيفطتيهش، كنحطو بالتصويرة.
+المشاهد 2-4 (الجردة، البوم، لقاو الديناصور) راه متحركين ديجا.
+
+(Add this to every prompt if the app has a "negative prompt" box:
+ text, subtitles, extra limbs, distorted face, scary)
+
+-----------------------------------------------------
+01_title.png  — المدة: 5s
+Cute 3D cartoon. The little boy waves happily at the camera and the baby
+green dinosaur waves too and wiggles its tail. Flowers sway in a gentle breeze,
+slow camera push-in. Warm sunny bedtime-story mood.
+
+05_conversation.png  — المدة: 10s
+Cute 3D cartoon. The kind little boy gently pats the sad baby green dinosaur's
+cheek and talks softly to it. The baby dinosaur sniffles, a small tear rolls
+down, then it looks up at him hopefully. Leaves move softly, slow camera move.
+
+06_dont_be_afraid.png  — المدة: 5s
+Cute 3D cartoon. The little boy smiles bravely, puts his hand on his chest and
+reaches his other hand out to the baby dinosaur. The baby dinosaur wipes its
+tear, smiles and nods happily. Gentle camera push-in.
+
+07a_walk_hill.png  — المدة: 5s
+Cute 3D cartoon. The little boy and the baby green dinosaur walk happily side by
+side up a grassy hill, swinging their arms, bouncy steps, smiling at each other.
+Clouds drift in the blue sky, camera tracks alongside them.
+
+07b_splash_water.png  — المدة: 5s
+Cute 3D cartoon. The little boy and the baby dinosaur splash happily through a
+shallow sparkling stream, water droplets flying, both laughing.
+Camera follows them slowly.
+
+08_mama_roar.png  — المدة: 10s
+Cute 3D cartoon. The big friendly mother dinosaur appears and gives a gentle,
+happy roar, smiling. The baby dinosaur jumps with joy and the little boy looks
+up amazed and smiles. Nothing scary, soft sunlight, slow camera move.
+
+09_hug.png  — المدة: 10s
+Cute 3D cartoon. The mother dinosaur lovingly hugs her baby, both close their
+eyes happily, pink hearts float up into the air. The little boy watches, smiles
+and claps his hands. Gentle slow camera push-in.
+
+10a_home_mama.png  — المدة: 10s
+Cute 3D cartoon. Cozy Moroccan living room at sunset. The little boy runs happily
+into his mother's open arms and she hugs him warmly, both smiling. Lanterns
+glow softly, slow camera move.
+
+10b_moon_night.png  — المدة: 5s
+Cute 3D cartoon. Night over a Moroccan town. The smiling crescent moon twinkles,
+stars sparkle, the little boy sleeps peacefully hugging his green dinosaur toy,
+his chest rising softly. Very slow camera pull-back, calm lullaby mood.
