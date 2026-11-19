@@ -49,7 +49,7 @@ export const SHOTS: Shot[] = [
   { kind: "chapter", sec: 2, bg: "dark", num: "المشهد 4", title: "النهاية" },
   { kind: "action", sec: 2.5, bg: "night", who: "youssef", text: "يوسف كيبكي… وكيطلب السماح" },
   { kind: "line", sec: 4, bg: "night", who: "father", text: "أنا ما كنتش كنقلب على ولد يرث الدار…" },
-  { kind: "line", sec: 4, bg: "night", who: "father", text: "كنت كنقلب على ولد يخاف عليا قبل ما يموت" },
+  { kind: "line", sec: 4, bg: "night", who: "father", text: "كنت كنقلب على ولد يخاف عليا قبل ما نموت" },
   { kind: "closeup", sec: 3.5, bg: "night" },
   { kind: "moral", sec: 4, bg: "dark" },
 ];
