@@ -15,9 +15,12 @@ for s in $SCENES; do
   IFS=: read -r n a b <<<"$s"; d=$(python3 -c "print(round($b-$a,3))")
   if [ -f "$CLIPS/$n.mp4" ]; then
     cd_=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$CLIPS/$n.mp4")
-    # stretch (slow down) or trim the clip to exactly fit the narration window
-    f=$(python3 -c "print(max(1.0,$d/$cd_))")
-    ffmpeg -v error -y -i "$CLIPS/$n.mp4" -an -vf "setpts=$f*PTS,$VF" -t "$d" -c:v libx264 -crf 18 "$W/$n.mp4"
+    # slow the clip a little (max 1.6x), then play it forward/backward until it fills the narration window
+    f=$(python3 -c "print(min(1.6,max(1.0,$d/$cd_)))")
+    ffmpeg -v error -y -i "$CLIPS/$n.mp4" -an -vf "setpts=$f*PTS,$VF" -c:v libx264 -crf 16 "$W/fwd.mp4"
+    ffmpeg -v error -y -i "$W/fwd.mp4" -vf reverse -c:v libx264 -crf 16 "$W/rev.mp4"
+    : > "$W/pp.txt"; for k in 1 2 3 4 5 6; do echo "file '$W/fwd.mp4'" >> "$W/pp.txt"; echo "file '$W/rev.mp4'" >> "$W/pp.txt"; done
+    ffmpeg -v error -y -f concat -safe 0 -i "$W/pp.txt" -t "$d" -c:v libx264 -crf 18 "$W/$n.mp4"
   else
     ffmpeg -v error -y -loop 1 -i "$KIT/jpg/$n.jpg" -vf "scale=2112:-1,zoompan=z='1+0.0015*on':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2':d=1:s=1920x1080:fps=25,format=yuv420p,setsar=1" -t "$d" -c:v libx264 -crf 18 "$W/$n.mp4"
   fi
