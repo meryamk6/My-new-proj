@@ -18,7 +18,7 @@ const FPS = 30;
 // The CellCog draft's own closing shot crops both faces, so we cut at 12.1s
 // and close on the corrected two-shot still instead.
 export const CUT = Math.round(12.1 * FPS);
-export const ENDING = Math.round(4.5 * FPS);
+export const ENDING = Math.round(5 * FPS);
 export const LWERT_REAL_FRAMES = CUT + ENDING;
 
 const Ending: React.FC = () => {
@@ -51,10 +51,10 @@ const Ending: React.FC = () => {
         }}
       >
         <div style={{ fontSize: 80, lineHeight: 1.45, opacity: a, transform: `translateY(${(1 - a) * 40}px)` }}>
-          ماشي كلشي اللي كيتسمى عائلة،
+          هوما كانو كيحسبو شحال غادي ياخدو…
         </div>
-        <div style={{ fontSize: 88, lineHeight: 1.45, color: "#f2c46b", opacity: b, transform: `translateY(${(1 - b) * 40}px)` }}>
-          كيكون عندو قلب العائلة
+        <div style={{ fontSize: 84, lineHeight: 1.45, color: "#f2c46b", opacity: b, transform: `translateY(${(1 - b) * 40}px)` }}>
+          وهي كانت كتحسب شحال باقي ليها معاه
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
