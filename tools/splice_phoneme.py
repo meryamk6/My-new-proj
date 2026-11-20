@@ -8,7 +8,7 @@ i0, i1 = int(t0 * sr), int(t1 * sr); L = i1 - i0
 n = n[:L] if len(n) >= L else np.pad(n, (0, L - len(n)))
 rms = lambda x: np.sqrt(np.mean(x ** 2)) + 1e-9
 ctx = np.concatenate([full[i0 - int(0.03 * sr):i0], full[i1:i1 + int(0.03 * sr)]])
-n = n * min(rms(ctx) * 0.7 / rms(n), 4.0)  # nasal murmur a bit quieter than vowels
+n = n * min(rms(ctx) * float(sys.argv[6] if len(sys.argv) > 6 else 0.7) / rms(n), 6.0)  # nasal murmur a bit quieter than vowels
 fx = int(0.012 * sr); ramp = np.linspace(0, 1, fx)
 out = full.copy()
 seg = out[i0:i1].copy()
