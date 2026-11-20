@@ -37,13 +37,14 @@ const Ending: React.FC = () => {
       <AbsoluteFill
         dir="rtl"
         style={{
+          // Reels safe zone (ffmpeg-skill _platforms.py): top 8%, bottom 20%, right 12%, left 5%.
           top: 250,
-          bottom: 250,
+          bottom: 420,
           height: "auto",
           justifyContent: "flex-end",
           alignItems: "center",
           textAlign: "center",
-          padding: "0 70px 40px",
+          padding: "0 150px 0 70px",
           fontFamily,
           fontWeight: 900,
           color: "white",

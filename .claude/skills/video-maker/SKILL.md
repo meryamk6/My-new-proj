@@ -13,17 +13,31 @@ description: استعملها كل مرة نطلب فيها فيديو، ريل�
 ## الستايل
 - النصوص بالدارجة المغربية وبالحروف العربية، ومن اليمين لليسار (dir="rtl").
 - الفونت Cairo، النص كبير وواضح على التلفون (العنوان ما يقلش على 80px فالعمودي).
-- ما تحطش النص فـ 250px اللولين ولا اللخرين فالعمودي (بلاصة الواجهة ديال التطبيقات).
+- ما تحطش النص تحت الواجهة ديال التطبيقات فالعمودي (1080x1920):
+  - Reels: فوق 8% (154px)، تحت 20% (384px)، يمين 12% (130px)، يسار 5% (54px).
+  - TikTok: فوق 10%، تحت 22%، يمين 14%. Shorts: فوق 6%، تحت 18%، يمين 12%.
+  - فالكود: خلي النص بين y=250 و y=1520، و paddingRight ≥ 150px.
 - انيميشن ساهلة: دخول بـ spring، انتقالات سريعة، ما تكثرش.
 - إلا كان public/logo.png، حطو فالمشهد اللخر.
 ## التنظيم
 - كل فيديو فدوسي ديالو: src/videos/<اسم-الفيديو>/ وسجلو فـ Root.tsx.
 - الـ render: npx remotion render <id> out/<اسم-الفيديو>.mp4
 ## المراجعة (ضروري)
-- من بعد الـ render استخرج 3 frames (البداية، الوسط، اللخر) بـ ffmpeg وشوفهم.
+- من بعد الـ render استخرج 3 frames (البداية، الوسط، اللخر) بـ look.py --safe reels وشوفهم.
 - تأكد: النص ما مقطوعش، الحروف العربية مربوطة مزيان، ما كاينش شاشة خاوية.
 - دوز الفيديو على ffmpeg-skill: python3 .claude/skills/ffmpeg-skill/scripts/check.py out/<اسم-الفيديو>.mp4 --platform reels (ولا youtube). خاص 0 failed.
 - إلا لقيتي شي غلط صلحو وعاود الـ render قبل ما تسلّم.
+## الأدوات (ffmpeg-skill فـ .claude/skills/ffmpeg-skill)
+- قبل أي تعديل على فيديو جا من برا (CellCog ولا شي ملف): python3 .claude/skills/ffmpeg-skill/scripts/probe.py <file> باش تعرف الأرقام الحقيقية.
+- تجميع المشاهد: join.py a.mp4 b.mp4 --transition fade --duration 0.3
+- تنقية الصوت ديال الحوار: audio.py in.mp4 --voice (ولا tools/clean_voice.sh للتنقية بالذكاء الاصطناعي).
+- موسيقى تحت الحوار كتنقص ملي كيهضرو: audio.py in.mp4 --music bed.mp3 --duck --fade-out 3
+- قوة الصوت: loudness.py in.mp4 (الهدف ديال Reels: -14 LUFS ± 2).
+- ترجمة بالعربية: caption.py (كيخدم بـ libass اللي كيربط الحروف العربية ومن اليمين لليسار مزيان)، ماشي overlay.py --text.
+- المراجعة ديال الصور: look.py out.mp4 --at 1 --at <الوسط> --at <اللخر> --safe reels، وشوف الـ PNG (الحمر = الواجهة ديال التطبيق، النص ما يدخلش ليه).
+- المراجعة التقنية: check.py out.mp4 --platform reels، خاص 0 failed.
+- Remotion خاصو ديما يخرج yuv420p + bt709 (كاين فـ remotion.config.ts).
+
 ## التسليم
 - دير commit للكود وللـ MP4 اللي ف out/ ودير push.
 - قول ليا فين كاين الملف وشنو المدة ديالو.

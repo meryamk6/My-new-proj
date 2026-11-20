@@ -43,11 +43,12 @@ const Safe: React.FC<{ children: React.ReactNode; justify?: React.CSSProperties[
   <AbsoluteFill
     dir="rtl"
     style={{
+      // Reels safe zone (ffmpeg-skill _platforms.py): top 8%, bottom 20%, right 12%, left 5%.
       top: 250,
-      bottom: 250,
+      bottom: 400,
       height: "auto",
       paddingLeft: 70,
-      paddingRight: 70,
+      paddingRight: 150,
       display: "flex",
       flexDirection: "column",
       alignItems: "center",
@@ -235,7 +236,7 @@ const MoralShot: React.FC = () => {
         الورث الحقيقي<br />ماشي الدار…
       </div>
       <div style={{ fontSize: 86, fontWeight: 900, lineHeight: 1.5, color: GOLD, opacity: b, transform: `scale(${0.85 + 0.15 * b})`, textShadow: shadow }}>
-        هو الرحمة اللي كتخلي<br />في قلب ولادك
+        هو الرحمة اللي<br />كتخلي في قلب ولادك
       </div>
       <div style={{ marginTop: 60, fontSize: 48, fontWeight: 700, opacity: 0.7 * c }}>— النهاية —</div>
       {SHOW_LOGO && <Img src={staticFile("logo.png")} style={{ marginTop: 40, width: 200, opacity: c }} />}
