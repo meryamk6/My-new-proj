@@ -232,10 +232,10 @@ const MoralShot: React.FC = () => {
   return (
     <Safe>
       <div style={{ fontSize: 90, fontWeight: 900, lineHeight: 1.5, opacity: a, textShadow: shadow }}>
-        هوما كانو كيحسبو شحال غادي ياخدو…
+        الورث الحقيقي<br />ماشي الدار…
       </div>
-      <div style={{ fontSize: 100, fontWeight: 900, lineHeight: 1.5, color: GOLD, opacity: b, transform: `scale(${0.85 + 0.15 * b})`, textShadow: shadow }}>
-        وهي كانت كتحسب شحال باقي ليها معاه
+      <div style={{ fontSize: 86, fontWeight: 900, lineHeight: 1.5, color: GOLD, opacity: b, transform: `scale(${0.85 + 0.15 * b})`, textShadow: shadow }}>
+        هو الرحمة اللي كتخلي<br />في قلب ولادك
       </div>
       <div style={{ marginTop: 60, fontSize: 48, fontWeight: 700, opacity: 0.7 * c }}>— النهاية —</div>
       {SHOW_LOGO && <Img src={staticFile("logo.png")} style={{ marginTop: 40, width: 200, opacity: c }} />}

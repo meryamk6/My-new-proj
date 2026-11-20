@@ -51,10 +51,10 @@ const Ending: React.FC = () => {
         }}
       >
         <div style={{ fontSize: 80, lineHeight: 1.45, opacity: a, transform: `translateY(${(1 - a) * 40}px)` }}>
-          هوما كانو كيحسبو شحال غادي ياخدو…
+          الورث الحقيقي<br />ماشي الدار…
         </div>
         <div style={{ fontSize: 84, lineHeight: 1.45, color: "#f2c46b", opacity: b, transform: `translateY(${(1 - b) * 40}px)` }}>
-          وهي كانت كتحسب شحال باقي ليها معاه
+          هو الرحمة اللي كتخلي<br />في قلب ولادك
         </div>
       </AbsoluteFill>
     </AbsoluteFill>
