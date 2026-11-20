@@ -22,6 +22,7 @@ description: استعملها كل مرة نطلب فيها فيديو، ريل�
 ## المراجعة (ضروري)
 - من بعد الـ render استخرج 3 frames (البداية، الوسط، اللخر) بـ ffmpeg وشوفهم.
 - تأكد: النص ما مقطوعش، الحروف العربية مربوطة مزيان، ما كاينش شاشة خاوية.
+- دوز الفيديو على ffmpeg-skill: python3 .claude/skills/ffmpeg-skill/scripts/check.py out/<اسم-الفيديو>.mp4 --platform reels (ولا youtube). خاص 0 failed.
 - إلا لقيتي شي غلط صلحو وعاود الـ render قبل ما تسلّم.
 ## التسليم
 - دير commit للكود وللـ MP4 اللي ف out/ ودير push.
