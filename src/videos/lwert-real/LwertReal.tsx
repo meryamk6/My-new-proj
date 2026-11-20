@@ -64,7 +64,7 @@ const Ending: React.FC = () => {
 export const LwertReal: React.FC = () => (
   <AbsoluteFill style={{ background: "black" }}>
     <Sequence durationInFrames={CUT}>
-      <OffthreadVideo src={staticFile("lwert-real/scene_draft_01.mp4")} style={{ width: "100%", height: "100%" }} />
+      <OffthreadVideo src={staticFile("lwert-real/scene_hd.mp4")} style={{ width: "100%", height: "100%" }} />
     </Sequence>
     <Sequence from={CUT} durationInFrames={ENDING}>
       <Ending />
